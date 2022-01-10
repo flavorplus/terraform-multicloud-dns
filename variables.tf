@@ -26,6 +26,12 @@ variable "create_aws_dns_zone" {
 
 # Azure
 
+variable "subscription_id" {}
+variable "tenant_id" {}
+variable "client_id" {}
+variable "client_secret" {}
+
+
 variable "create_azure_dns_zone" {
   description = "Set to true if you want to deploy the Azure delegated zone."
   type        = bool
